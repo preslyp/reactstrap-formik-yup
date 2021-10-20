@@ -102,7 +102,7 @@ Once you create your form with a formik you can use them with formik Field
     name='position'
     type='radio'
     value='Developer'
-    as={RadioAndCheckBoxComponent}
+    as={RadioComponent}
     label='Developer'
 />
 
