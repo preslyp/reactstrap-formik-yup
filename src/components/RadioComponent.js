@@ -12,7 +12,7 @@ import { getClasses } from "./Helpers";
  * @returns
  */
 
-const RadioAndCheckBoxComponent = ({
+const RadioComponent = ({
 	helperText,
 	required,
 	inline,
@@ -21,6 +21,8 @@ const RadioAndCheckBoxComponent = ({
 	...props
 }) => {
 	const [field, meta] = useField(props);
+
+	console.log(meta);
 
 	const requiredLabel = (label) => {
 		return (
@@ -50,4 +52,4 @@ const RadioAndCheckBoxComponent = ({
 	);
 };
 
-export default RadioAndCheckBoxComponent;
+export default RadioComponent;
